@@ -88,15 +88,51 @@ Il faut alors rajouter dans le PATH, */sw/bin*, */sw/lib*, */sw/include* ou la m
 - Le principal problème de Fink et de MacPorts, c'est que ce sont des usines à gaz: ils ne tiennent pas compte de ce qui est préalablement installé, installent tout dans leurs dossiers respectifs ce qui peut créer de réels problèmes dans la gestion des PATHs.
 - Homebrew est plus « propre » (dans */usr/*) et se base sur les librairies existantes, si elles sont à jour.
 
-c) Compiler les sources
------------------------ 
+**c) Compiler les sources**
+
 
 Si le cœur vous en dit, vous pouvez compiler les sources. Pour cela, il vaut mieux installer les « Developper tools » disponible gratuitement. Ils offrent un IDE, XTools et une multitude d'éléments supplémentaires. En pratique, c'est long mais relativement facile. Il est possible de le faire sous une forme classique (résultats dans le dossier */usr/*) ou sous forme de Framework.
 
-d) une version autonome: [Anaconda](https://store.continuum.io/)
------------------------------------
+**d) une version autonome: [Anaconda](https://store.continuum.io/)**
 
 C'est une version complète de Python autonome (qui n'interfère pas avec les autres versions de Python) et qui s'installe dans un simple dossier (à votre choix).
 
 La version de base est la 2.7.x, mais elle permet d'installer tous les autres versions (de la 2.6 à la 3.3).
-Il suffit, pour la lancer d'adapter le chemin (par exemple */Users/vous/anaconda/bin/python*):
+Il suffit, pour la lancer d'adapter le chemin (par exemple */Users/vous/anaconda/bin/python*).
+
+Ce n'est pas un framework mais le même genre de version qui serait installée dans /usr/ mais elle a le même avantage qu'un framework, si l'on veut s'en débarrasser, il suffit de placer le dossier anaconda dans la corbeille et c'est tout. Elle peut donc être installée sur un support externe comme une clé USB.
+
+  - elle est installée avec la plupart des modules scientifiques et autres (voir la liste à [Packages](http://docs.continuum.io/anaconda/pkgs.html));
+  - elle dispose de toutes les fonctionnalités d'une installation classique comme easy_install ou pip (il suffit d'ajuster le chemin lors de l'appel : */Users/vous/anaconda/bin/pip install* ...).
+
+Mais elle dispose surtout de son propre installeur, nommé [conda](http://www.continuum.io/blog/conda):
+
+  - il permet d'installer et de gérer des modules optimisés à partir du site d'anaconda (optimisés car il est toujours possible de les installer de manière classique)
+  - il permet surtout d'installer d'autres versions de Python (2.6.x, à 3.x.x) dans des environnements autonomes, indépendants de la version 2.7.x (une espèce de super "virtual environment", voir [Creating Python 3.3 or Python 2.6 environments](http://docs.continuum.io/conda/intro.html#creating-python-3-3-or-python-2-6-environments))
+  - il permet aussi d'installer un nombre infini de versions de Python avec des versions de modules différentes (une avec numpy 1.5, une autre avec numpy 1.7, etc., voir [conda-overview](http://docs.continuum.io/conda/intro.html#conda-overview-).
+  - il permet aussi de mettre à jour la version d'anaconda
+  - même solution, si vous voulez vous en débarrasser -> dossiers dans la corbeille
+
+4) Les modules
+----------------
+
+  - Avec les versions de Python préinstallées ou la version officielle (Framework), cela se fait classiquement avec Pip, easy_install ou python setup.py install. Il existe de plus en plus des distributions propres à Mac OS X comme numpy, scipy, PyQt4, PySide, etc., ce qui fait qu'il n'y a pas besoin de les compiler soi même. Le seul qui posait problème était WxPython avec la version 64 bits de Python;
+  - Hormis rares exceptions, je n'ai jamais eu le moindre problème pour installer simplement un module, même les plus complexes comme ceux qui utilisent Fortran;
+  - si l'on veut une distribution scientifique de Python, il suffit d'installer la version OpenSource de [Enthought](https://www.enthought.com/products/epd/free/) (EPD avec tous les modules nécessaires) en 32 ou 64 bits (aussi sous forme de Framework)
+  - il y a, bien entendu, des modules spécifiques à Mac OS X comme le module py2app qui permet de créer des applications (comme Pyexe sur Windows ou cxfreeze). Et donc ceux qui voudraient utiliser cxfreeze sur Mac OS X en seront pour leur frais et ils pourront dire qu'il n'y a rien sur Mac. Le problème est simplement que les utilisateurs Mac n'en ont pas besoin...
+
+5) Désinstallation d'une version de Python
+-------------------------------------------
+
+Comment désinstaller quelque chose sur Mac ? Ça a l'air éminemment complexe pour certains et pourtant...
+
+>Il suffit de mettre l'objet dans la corbeille
+
+- Si on a suivi les directives d'Apple (Frameworks etc., d'où leur intérêt) et si je veux supprimer l'entièreté d'une version de Python, je déplace le dossier Python 2.x dans la corbeille, et c'est tout. Il y aura peut être des chemins à supprimer dans votre fichier .bash_profile et peut être des liens symboliques dans /usr/bin/.
+- Si je veux supprimer une version de Python installées par un gestionnaire de paquet, il offre généralement les moyens de le faire.
+- le problème se posera éventuellement si l'on a choisi de le compiler soi-même sous une forme classique (multiples fichiers dans le dossier /usr/).
+ 
+Le problème se posera éventuellement si l'on a choisi de le compiler soi-même sous une forme classique (multiples fichiers dans le dossier /usr/).
+
+Compliqué, n'est ce pas ?
+Attention, la seule chose à ne pas faire est de supprimer une des versions préinstallées.
