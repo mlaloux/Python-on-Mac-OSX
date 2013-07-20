@@ -8,7 +8,7 @@ But if you want, you can install others versions of Python (in 64-bits, not 32 !
 **a) the way prescribed by Apple: as a framework**
 
  - the official versions of Python.org are installed in  */Library/Frameworks/Python.framework* with site-packages folder in */Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages*
- - same for the Enthought scientific version of Python (scientific distribution with many modules preinstalled, numpy, scipy, matplotlib,...), 
+ - same for the [Enthought](https://www.enthought.com/products/epd/free/) scientific version of Python (scientific distribution with many modules preinstalled, numpy, scipy, matplotlib,...), 
  - (you can also install the Homebrew Python version as a framework, see below)
 
 You must change the PATH of the Python executable in */usr/bin* (usually, this is done automatically by the distribution by symlinks or in the */Users/me/.bash_profile* file ). 
@@ -17,15 +17,15 @@ The modules installed in */Library/Frameworks/Python.framework/Versions/2.7/lib/
 
 **b) the package management system way**
 
- - MacPorts install its own version of Python in the folder */opt/*;
+ - [MacPorts](http://www.macports.org/) install its own version of Python in the folder */opt/*;
 
     sudo port -v install python27
 
- - Fink install its own version of Python in the folder */sw/*;
+ - [Fink](fink.sf.net/) install its own version of Python in the folder */sw/*;
 
     fink install Python27
 
- - Homebrew installs Python in */usr/local/Cellar* with symlinks in */usr/local/bin*.
+ - [Homebrew](http://mxcl.github.io/homebrew/) installs Python in */usr/local/Cellar* with symlinks in */usr/local/bin*.
 
     brew install python  
 or  
@@ -50,13 +50,9 @@ or
 
 **d) the "hard" way** 
 
- - you can compile your own version of Python in a classical form (results in /usr/) or as a framework. It takes time but it is not difficult.
+ - you can compile your own version of Python in a classical form (results in */usr/*) or as a framework. It takes time but it is not difficult.
 
-So your question:
 
-> How can I get a Python installation in a virtual environment that includes a framework that I can include into Xcode?
-
-Unless you are a Unix specialist (PATHs management) , you must use the Apple's recommended solution, a frameworks distribution (including the Apple Python)
 
 
   [1]: https://store.continuum.io/
