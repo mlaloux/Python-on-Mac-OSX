@@ -1,4 +1,4 @@
 Python-on-Mac-OSX
 =================
 
-Python sur Mac OS X
+Quelques conseils pour utiliser Python sur Mac OS X ou installer d'autres versions.
