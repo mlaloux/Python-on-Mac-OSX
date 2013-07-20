@@ -100,7 +100,7 @@ C'est une version complète de Python autonome (qui n'interfère pas avec les au
 La version de base est la 2.7.x, mais elle permet d'installer tous les autres versions (de la 2.6 à la 3.3).
 Il suffit, pour la lancer d'adapter le chemin (par exemple */Users/vous/anaconda/bin/python*).
 
-Ce n'est pas un framework mais le même genre de version qui serait installée dans /usr/ mais elle a le même avantage qu'un framework, si l'on veut s'en débarrasser, il suffit de placer le dossier anaconda dans la corbeille et c'est tout. Elle peut donc être installée sur un support externe comme une clé USB.
+Ce n'est pas un framework mais le même genre de version qui serait installée dans */usr/* mais elle a le même avantage qu'un framework, si l'on veut s'en débarrasser, il suffit de placer le dossier anaconda dans la corbeille et c'est tout. Elle peut donc être installée sur un support externe comme une clé USB.
 
   - elle est installée avec la plupart des modules scientifiques et autres (voir la liste à [Packages](http://docs.continuum.io/anaconda/pkgs.html));
   - elle dispose de toutes les fonctionnalités d'une installation classique comme easy_install ou pip (il suffit d'ajuster le chemin lors de l'appel : */Users/vous/anaconda/bin/pip install* ...).
@@ -136,3 +136,17 @@ Le problème se posera éventuellement si l'on a choisi de le compiler soi-même
 
 Compliqué, n'est ce pas ?
 Attention, la seule chose à ne pas faire est de supprimer une des versions préinstallées.
+
+
+6) Désinstallation ou mise à jour d'un module
+----------------------------------------------
+
+- si vous avez choisi de le faire de la manière préconisée avec pip ou easy_install, c'est la même chose qu'avec Linux ou Windows
+- si elles ont été installées par un gestionnaire de paquets, c'est le problème du gestionnaire, pas d'Apple
+
+7) Conclusions
+---------------
+Et voila, j'espère avoir été clair.
+Pour ma part, j'utilise exclusivement les versions préinstallées et maintenant Anaconda pour les autres versions
+Et ne faites surtout pas comme certains débutants qui installent tout n'importe comment et se retrouvent « Gros-Jean comme devant »: [Python + Leopard + Fink + Mac Ports + Python.org + Idiot = broken Python - fresh start?](http://stackoverflow.com/questions/242065/python-leopard-fink-mac-ports-python-org-idiot-broken-python-fresh)
+
