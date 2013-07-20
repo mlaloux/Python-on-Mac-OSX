@@ -54,6 +54,8 @@ La plupart des distributions de logiciels ou de librairies libres utilisent de p
 
 Il est aussi utiliser ce qu'il y a dans un Framework comme dépendances pour compiler d'autres librairies ou applications(tout comme s'il était dans */usr/local/...*).
 
+Si l'on veut une distribution scientifique de Python, il suffit d'installer la version OpenSource de [Enthought](https://www.enthought.com/products/epd/free/) (EPD avec tous les modules nécessaires) en 32 ou 64 bits livrée aussi sous forme de Framework.
+  
 
 **b) les gestionnaires de paquets**
 
@@ -118,7 +120,6 @@ Mais elle dispose surtout de son propre installeur, nommé [conda](http://www.co
 
   - Avec les versions de Python préinstallées ou la version officielle (Framework), cela se fait classiquement avec Pip, easy_install ou python setup.py install. Il existe de plus en plus des distributions propres à Mac OS X comme numpy, scipy, PyQt4, PySide, etc., ce qui fait qu'il n'y a pas besoin de les compiler soi même. Le seul qui posait problème était WxPython avec la version 64 bits de Python;
   - Hormis rares exceptions, je n'ai jamais eu le moindre problème pour installer simplement un module, même les plus complexes comme ceux qui utilisent Fortran;
-  - si l'on veut une distribution scientifique de Python, il suffit d'installer la version OpenSource de [Enthought](https://www.enthought.com/products/epd/free/) (EPD avec tous les modules nécessaires) en 32 ou 64 bits (aussi sous forme de Framework)
   - il y a, bien entendu, des modules spécifiques à Mac OS X comme le module py2app qui permet de créer des applications (comme Pyexe sur Windows ou cxfreeze). Et donc ceux qui voudraient utiliser cxfreeze sur Mac OS X en seront pour leur frais et ils pourront dire qu'il n'y a rien sur Mac. Le problème est simplement que les utilisateurs Mac n'en ont pas besoin...
 
 5) Désinstallation d'une version de Python
@@ -148,5 +149,9 @@ Attention, la seule chose à ne pas faire est de supprimer une des versions pré
 ---------------
 Et voila, j'espère avoir été clair.
 Pour ma part, j'utilise exclusivement les versions préinstallées et maintenant Anaconda pour les autres versions
-Et ne faites surtout pas comme certains débutants qui installent tout n'importe comment et se retrouvent « Gros-Jean comme devant »: [Python + Leopard + Fink + Mac Ports + Python.org + Idiot = broken Python - fresh start?](http://stackoverflow.com/questions/242065/python-leopard-fink-mac-ports-python-org-idiot-broken-python-fresh)
+Et ne faites surtout pas comme certains débutants qui installent tout n'importe comment et se retrouvent « Gros-Jean comme devant »: [Python + Leopard + Fink + Mac Ports + Python.org + Idiot = broken Python - fresh start?](http://stackoverflow.com/questions/242065/python-leopard-fink-mac-ports-python-org-idiot-broken-python-fresh).
+
+Bien entendu Python sur Mac OS X a de vrais défauts spécifiques, tout comme les versions pour Windows ou Linux et il serait peut être intéressant de les aborder réellement.
+
+Et bien entendu aussi, les utilisateurs de Mac OS X sont souvent les grands oubliés, surtout dans le monde francophone: Linux pour les développeurs et Windows pour les utilisateurs, Mac OS X c'est beau et pas sérieux. Quand je vois dans le monde scientifique le nombre de plus en plus grand de personnes qui utilisent les macs, je me pose des questions. 
 
