@@ -42,9 +42,9 @@ Plusieurs solutions s'offrent alors à vous:
 
 **a) la manière préconisée par Apple: les Frameworks**
 
-La plus simple est de télécharger une des versions officielles de Python.org et de l'installer Ces versions sont livrées sous forme de Frameworks mais, c'est quoi un Framework ?
+La plus simple est de télécharger une des versions officielles de Python.org et de l'installer. Ces versions sont livrées sous forme de Frameworks mais, c'est quoi un Framework ?
 
-Pour faciliter le développement sous Mac OS X, ses concepteurs ont introduit la notion de Frameworks. Un Framework est un dossier contenant du code, des headers, de la documentation et d’éventuelles ressources supplémentaires. Il est ainsi possible d’installer des librairies dynamiques en ne manipulant qu’un seul objet, le Framework. Ils permettent de gérer plusieurs versions d'une librairie (mises à jour,etc.) avec des liens symboliques.
+Pour faciliter le développement sous Mac OS X, ses concepteurs ont introduit la notion de Framework. Un Framework est un dossier contenant du code, des headers, de la documentation et d’éventuelles ressources supplémentaires. Il est ainsi possible d’installer des librairies dynamiques en ne manipulant qu’un seul objet, le Framework. Ils permettent de gérer plusieurs versions d'une librairie (mises à jour,etc.) avec des liens symboliques.
     
 Les emplacements de ces Frameworks sont les dossiers Bibliothèque/Library (même si vous voyez Bibliothèque dans le Finder, ce sera Library dans le Terminal). Il y en a au moins trois:  
 
@@ -64,7 +64,7 @@ Les versions de Python sont installées dans  */Library/Frameworks/Python.framew
 
 **b) les gestionnaires de paquets**
 
-Vous pouvez utiliser un Gestionnaires de paquets comme Synaptic sur Ubuntu, ou autres.
+Vous pouvez utiliser un Gestionnaire de paquets comme Synaptic sur Ubuntu, ou autres.
 Vous leur indiquez ce que vous voulez installer et ils s'occupent de tout (installation des dépendances préalables, configuration et compilation). Au final, vous obtiendrez des exécutables semblables à ceux obtenus dans la première solution, mais dans d'autres dossiers. Ceux-ci sont:
 
   - [Fink](fink.sf.net/) qui est le système de gestion de paquets de la distribution Linux Debian porté sur Mac OS X. Il installe les programmes dans un dossier à la racine du disque: */sw/*
@@ -98,9 +98,9 @@ Il faut alors rajouter dans le PATH, */sw/bin*, */sw/lib*, */sw/include* ou la m
 **c) Compiler les sources**
 
 
-Si le cœur vous en dit, vous pouvez compiler les sources. Pour cela, il vaut mieux installer les « Developper tools » disponible gratuitement. Ils offrent un IDE, XTools et une multitude d'éléments supplémentaires. En pratique, c'est long mais relativement facile. Il est possible de le faire sous une forme classique (résultats dans le dossier */usr/*) ou sous forme de Framework.
+Si le cœur vous en dit, vous pouvez compiler les sources. Pour cela, il vaut mieux installer les « Developper tools » disponibles gratuitement. Ils offrent un IDE, XTools et une multitude d'éléments supplémentaires. En pratique, c'est long mais relativement facile. Il est possible de le faire sous une forme classique (résultats dans le dossier */usr/*) ou sous forme de Framework.
 
-**d) une version autonome: [Anaconda](https://store.continuum.io/)**
+**d) utiliser une version autonome: [Anaconda](https://store.continuum.io/)**
 
 C'est une version complète de Python autonome (qui n'interfère pas avec les autres versions de Python) et qui s'installe dans un simple dossier (à votre choix).
 
