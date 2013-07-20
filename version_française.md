@@ -48,7 +48,7 @@ Les emplacements de ces Frameworks sont les dossiers Bibliothèque/Library (mêm
 
   - */Système/Bibliothèque/*, réservé à Mac OS X et auquel il ne faut pas toucher;
   - */Bibliothèque/*, utilisable par les administrateurs et dont le contenu est destiné à être partagé par tous les utilisateurs;
-  - un dossier *̃/Bibliothèque*/t
+  - un dossier *̃/Bibliothèque/* par utilisateur qui peut y mettre ce qu'il veut.
  
 La plupart des distributions de logiciels ou de librairies libres utilisent de plus en plus le système de Frameworks pour s'installer sur Mac OS X. Citons, entre autres, QT, GTK+, R, le Python de Python.org
 
@@ -92,3 +92,11 @@ c) Compiler les sources
 ----------------------- 
 
 Si le cœur vous en dit, vous pouvez compiler les sources. Pour cela, il vaut mieux installer les « Developper tools » disponible gratuitement. Ils offrent un IDE, XTools et une multitude d'éléments supplémentaires. En pratique, c'est long mais relativement facile. Il est possible de le faire sous une forme classique (résultats dans le dossier */usr/*) ou sous forme de Framework.
+
+d) une version autonome: [Anaconda](https://store.continuum.io/)
+-----------------------------------
+
+C'est une version complète de Python autonome (qui n'interfère pas avec les autres versions de Python) et qui s'installe dans un simple dossier (à votre choix).
+
+La version de base est la 2.7.x, mais elle permet d'installer tous les autres versions (de la 2.6 à la 3.3).
+Il suffit, pour la lancer d'adapter le chemin (par exemple */Users/vous/anaconda/bin/python*):
