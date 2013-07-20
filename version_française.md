@@ -118,7 +118,7 @@ Mais elle dispose surtout de son propre installeur, nommé [conda](http://www.co
   - il permet surtout d'installer d'autres versions de Python (2.6.x, à 3.x.x) dans des environnements autonomes, indépendants de la version 2.7.x (une espèce de super "virtual environment", voir [Creating Python 3.3 or Python 2.6 environments](http://docs.continuum.io/conda/intro.html#creating-python-3-3-or-python-2-6-environments))
   - il permet aussi d'installer un nombre infini de versions de Python avec des versions de modules différentes (une avec numpy 1.5, une autre avec numpy 1.7, etc., voir [conda-overview](http://docs.continuum.io/conda/intro.html#conda-overview-).
   - il permet aussi de mettre à jour la version d'anaconda
-  - même solution, si vous voulez vous en débarrasser -> dossiers dans la corbeille
+
 
 4) Les modules
 ----------------
@@ -136,7 +136,8 @@ Comment désinstaller quelque chose sur Mac ? Ça a l'air éminemment complexe p
 
 - Si on a suivi les directives d'Apple (Frameworks etc., d'où leur intérêt) et si je veux supprimer l'entièreté d'une version de Python, je déplace le dossier Python 2.x dans la corbeille, et c'est tout. Il y aura peut être des chemins à supprimer dans votre fichier .bash_profile et peut être des liens symboliques dans /usr/bin/.
 - Si je veux supprimer une version de Python installées par un gestionnaire de paquet, il offre généralement les moyens de le faire.
-- le problème se posera éventuellement si l'on a choisi de le compiler soi-même sous une forme classique (multiples fichiers dans le dossier /usr/).
+- le problème se posera éventuellement si l'on a choisi de le compiler soi-même sous une forme classique (multiples fichiers dans le dossier */usr/*).
+- même solution avec Anaconda  -> dossier dans la corbeille
  
 Le problème se posera éventuellement si l'on a choisi de le compiler soi-même sous une forme classique (multiples fichiers dans le dossier /usr/).
 
