@@ -33,6 +33,8 @@ Choisissez « Aller/Aller au dossier » dans le Finder et tapez */usr*, par exem
 
 Comme c'est un Unix, plusieurs versions de Python sont préinstallées. Pour s'en rendre compte il suffit d'ouvrir le Terminal (dans /Utilitaires/) et de taper Python. Elles sont en 64 bits mais il y a moyen de le faire tourner en 32 bits si l'envie vous en prend, de même qu'il est possible de choisir la version que l'on désire utiliser, voir https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/python.1.html pour montrer qu'il y a bien de la documentation sur le site d'Apple quand on cherche...
 
+Les versions de Python sont installées dans  */System/Library/Frameworks/Python.framework/Versions/2.x* et le dossier site-packages utilisable   */Library/Python/2.x/site-packages* 
+
 3) Vous n'êtes pas satisfaits des versions proposées et vous voudriez en installer une autre ?
 ----------------------------------------
 
@@ -55,6 +57,9 @@ La plupart des distributions de logiciels ou de librairies libres utilisent de p
 Il est aussi utiliser ce qu'il y a dans un Framework comme dépendances pour compiler d'autres librairies ou applications(tout comme s'il était dans */usr/local/...*).
 
 Si l'on veut une distribution scientifique de Python, il suffit d'installer la version OpenSource de [Enthought](https://www.enthought.com/products/epd/free/) (EPD avec tous les modules nécessaires) en 32 ou 64 bits livrée aussi sous forme de Framework.
+
+Les versions de Python sont installées dans  */Library/Frameworks/Python.framework/* et le dossier site-packages utilisable   */Library/Frameworks/Python.framework/Versions/2.x/lib/python2.x/site-packages* 
+
   
 
 **b) les gestionnaires de paquets**
