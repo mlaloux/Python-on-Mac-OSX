@@ -46,7 +46,8 @@ or
         - alias anaconda3='/Users/me/anaconda/envs/py33/bin/python3' 
     -  you can install Python versions from 2.6.x to 3.3.x
     -  Innovative package and environment manager for Python, named **conda**, but you can use pip or easy_install without problem
-    - for me now, it is the best solution to install virtual environments (as */Users/me/anaconda/envs/py33* )
+    - for me now, it is the best solution to install virtual environments (as */Users/me/anaconda/envs/py33* )  
+ - there is also [Python to the people:Pyzo](http://www.pyzo.org/)
 
 **d) the "hard" way** 
 
